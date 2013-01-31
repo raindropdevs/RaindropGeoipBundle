@@ -1,0 +1,27 @@
+{
+    "name": "raindrop/geoip-bundle",
+    "description": "Raindrop GeoIP Symfony2 Bundle with Maxmind data source",
+    "type": "symfony-bundle",
+    "keywords": ["geoip", "maxmind", "symfony2"],
+    "homepage": " ",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raindrop",
+            "email": " "
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": ">=2.0,<2.3-dev",
+        "symfony/finder": "2.2.*",
+        "symfony/yaml": "2.2.*",
+        "symfony/form": "2.2.*",
+        "symfony/browser-kit": "2.2.*"
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Raindrop/GeoIpBundle",
+    "autoload": {
+        "psr-0": { "Raindrop\\GeoIpBundle": "" }
+    }
+}
