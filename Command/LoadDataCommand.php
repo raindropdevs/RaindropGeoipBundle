@@ -47,17 +47,23 @@ EOT
     {
         $source = $input->getArgument('source');
 
-        $bundlePath = $this->getApplication()->getKernel()->getBundle('RaindropGeoipBundle')->getPath();
-        $dataDir = sprintf('%s', $bundlePath.'/data/');
+        $dataDir = sprintf('%s', __DIR__ . '/../data/');
         $filename = basename($source);
         $destination = sprintf('%s/%s', $dataDir, $filename);
         $output->writeln(sprintf('Start downloading %s', $source));
         $output->writeln('...');
+
         if (!copy($source, $destination)) {
             $output->writeln('<error>Error during file download occured</error>');
 
             return false;
         }
+
+        // remove the file if already exists
+        if (file_exists(str_replace('.gz', '', $destination))) {
+            unlink($destination);
+        }
+
         $output->writeln('<info>Download completed</info>');
         $output->writeln('Unzip the downloading data');
         $output->writeln('...');
