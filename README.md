@@ -1,5 +1,7 @@
 # Raindrop GeoIp Bundle #
 
+[![Build Status](https://travis-ci.org/raindropdevs/RaindropGeoipBundle.png?branch=master)](https://travis-ci.org/raindropdevs/RaindropGeoipBundle)
+
 To install this bundle please follow the next steps:
 
 First add the dependency to your `composer.json` file:
