@@ -20,8 +20,8 @@
         "symfony/browser-kit": "2.2.*"
     },
     "minimum-stability": "dev",
-    "target-dir": "Raindrop/GeoIpBundle",
+    "target-dir": "Raindrop/GeoipBundle",
     "autoload": {
-        "psr-0": { "Raindrop\\GeoIpBundle": "" }
+        "psr-0": { "Raindrop\\GeoipBundle": "" }
     }
 }
