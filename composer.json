@@ -2,8 +2,8 @@
     "name": "raindrop/geoip-bundle",
     "description": "Raindrop GeoIP Symfony2 Bundle with Maxmind data source",
     "type": "symfony-bundle",
-    "keywords": ["geoip", "maxmind", "symfony2"],
-    "homepage": " ",
+    "keywords": ["geoip", "maxmind"],
+    "homepage": "https://github.com/raindropdevs",
     "license": "MIT",
     "authors": [
         {
