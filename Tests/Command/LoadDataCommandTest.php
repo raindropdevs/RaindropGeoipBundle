@@ -54,6 +54,6 @@ class LoadDataCommandTest extends \PHPUnit_Framework_TestCase
                 ->will($this->returnValue(__DIR__ . '/../Fixtures/GeoLiteCity.dat.gz'));
         
         $this->command->run($this->mockInput, $this->mockOutput);
-        $this->assertTrue(file_exists(__DIR__ . '/../../data/GeoLiteCity.dat'));
+        $this->assertTrue(file_exists(__DIR__ . '/../../Resources/data/GeoLiteCity.dat'));
     }  
 }
