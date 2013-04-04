@@ -15,7 +15,7 @@ class GeoipManager
     {
         $filePath = sprintf('%s/%s',
             __DIR__ . '/../Resources/data',
-            'GeoIp.dat'
+            'GeoLiteCity.dat'
         );
         $this->geoip = new GeoIp($filePath);
     }

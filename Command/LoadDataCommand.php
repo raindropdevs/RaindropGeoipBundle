@@ -47,7 +47,7 @@ EOT
     {
         $source = $input->getArgument('source');
 
-        $dataDir = sprintf('%s', __DIR__ . '/../Resources/data/');
+        $dataDir = sprintf('%s', __DIR__ . '/../Resources/data');
         $filename = basename($source);
         $destination = sprintf('%s/%s', $dataDir, $filename);
         $output->writeln(sprintf('Start downloading %s', $source));
@@ -61,7 +61,7 @@ EOT
 
         // remove the file if already exists
         if (file_exists(str_replace('.gz', '', $destination))) {
-            unlink($destination);
+            unlink(str_replace('.gz', '', $destination));
         }
 
         $output->writeln('<info>Download completed</info>');
