@@ -61,7 +61,7 @@ EOT
 
         // remove the file if already exists
         if (file_exists(str_replace('.gz', '', $destination))) {
-            unlink($destination);
+            unlink(str_replace('.gz', '', $destination));
         }
 
         $output->writeln('<info>Download completed</info>');
