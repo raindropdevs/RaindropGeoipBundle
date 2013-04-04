@@ -47,7 +47,7 @@ EOT
     {
         $source = $input->getArgument('source');
 
-        $dataDir = sprintf('%s', __DIR__ . '/../data/');
+        $dataDir = sprintf('%s', __DIR__ . '/../Resources/data/');
         $filename = basename($source);
         $destination = sprintf('%s/%s', $dataDir, $filename);
         $output->writeln(sprintf('Start downloading %s', $source));
